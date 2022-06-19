@@ -1,0 +1,40 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(./images/fondo-page.jpeg);
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    margin-top: 50px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-top: 20px;
+    font-style: italic;
+
+}
+
+th{
+    background-color: dimgray;
+    color: white;
+}
+
+td,th{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+}
