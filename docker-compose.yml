@@ -50,7 +50,7 @@ services:
       - apache
     restart: always 
     environment:
-        DOMAINS: 'php-zaka.ddns.net -> http://apache:80 #production'
+        DOMAINS: 'zelk-php.ddns.net -> http://apache:80 #production'
     volumes:
       - ssl_certs_data:/var/lib/https-portal
     depends_on:
