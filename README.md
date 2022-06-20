@@ -338,7 +338,69 @@ Tenemos una Guía de Instalación en la página principal de [Bitwarden](https:/
 
 
 ## Monitorización de mi Pagina Web En PHP.
-La Página Web consiste en una simulación de una pequeña tienda virtual. Puedes observar el codigo empleado en el repositorio [Proyecto-ASIR](https://github.com/legofzhak/Proyecto-ASIR)
+La Página Web consiste en una simulación de una pequeña tienda virtual programada en PHP/HTML con una pequeña base de datos(no es mía). Esta implementada en una Pila LAMP con docker y Docker Compose. Puedes observar el codigo empleado en el repositorio [Proyecto-ASIR](https://github.com/legofzhak/Proyecto-ASIR)
 ![newbit](./img-repo/php1.png)
 
-## Monitorizar Página Web en PHP 
+## Monitorizar Página Web en PHP Con Docker.
+
+1. Como esta implementada con docker haremos los mismos pasos que hicimos con Bitwarden. Primero ejecutamos el Agente del Host Linux de New Relic donde esta desplegado la Página Web.
+![newbit](./img-repo/php2.png)
+Nota: El agente de Apache no va a funcionar en esta maquina ya que no esta localmente si no en una imagen docker.
+
+2. Ejecutamos el Agente de Docker de New Relic en nuestra maquina de la Pagina Web PHP.
+![newbit](./img-repo/php3.png)
+
+3. Creamos un Workload del Proyecto en PHP con los contenedores necesarios y el host donde estan desplegados los contenedores.
+![newbit](./img-repo/php4.png)
+
+4. Y ya tenemos nuestros contenedores y Host monitorizados de una manera centraliada.
+![newbit](./img-repo/php5.png)
+
+
+## Monitorizar el tráfico de nuestra web.
+
+Gracias al sistema que nos proporciona New Relic con Browser monitoring. Nos proporciona un simple script que podemos pegar en nuestra página Web y en unos minutos ya estamos monitorizando el trafico que tiene nuesta Web.
+
+![newbit](./img-repo/php6.png)
+
+1. Pinchamos en Browser Monitoring, y seleccionis el modo __Copy/Paste__ Javascript code.
+![newbit](./img-repo/php7.png)
+
+2. Dejamos las "instrumentation" por defecto. Seleccionamos que no esta la app y le damos un nombre a nuestra App. 
+![newbit](./img-repo/php8.png)
+
+3. Nos proporcionara un script que debemos pegar en nuestro index.php 
+![newbit](./img-repo/php9.png)
+
+4. Lo pegamos en el HEAD de nuesto index.
+![newbit](./img-repo/php10.png)
+
+5. Accedemos de nuevo a New Relic y entramos en Browser y pinchamos en el nombre de nuestra App, al cabo de unos minutos cuando generemos trafico de varios sitios empezará a mostrar datos.
+![newbit](./img-repo/php11.png)
+
+    No se puede observar todos los servicios pero nos puede mostrar demasiado con tanta sensillez.
+   ![newbit](./img-repo/php12.png)
+
+
+## Monitorización de Github Pages con New Relic.
+
+Aplicando la Monitorización de Browser de New Relic podemos monitorizar el tráfico de nuestra Web alojada en Github.
+
+1. Creamos una nueva App Browser en New Relic y copiamos el Script.
+![newbit](./img-repo/github1.png)
+
+2. Pegamos el Script en nuestro Index alojado en Github.
+![newbit](./img-repo/github2.png)
+
+3. Esperamos unos minutos mientras generamos trafico y veremos que empiezan a entrar datos de nuestra App.
+![newbit](./img-repo/github3.png)
+
+
+## Sistema de Logs New Relic
+
+New Relic nos permite ver todos los logs que tienen todos nuestros sistemas a la vez eso nos permite ver si hay algun problema sin estar buscando en que maquina o servicio a sido.
+![newbit](./img-repo/logs1.png)
+
+Pinchando en un Log podremos ver todos los detalles de que es, a que servicio pertenece y de que se trata.
+![newbit](./img-repo/logs2.png)
+
