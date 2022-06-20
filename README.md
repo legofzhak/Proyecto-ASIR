@@ -8,6 +8,31 @@
 | |\  | |___  \ V  V /    |  _ <| |___| |___ | | |___
 |_| \_|_____|  \_/\_/     |_| \_\_____|_____|___\____|
 ````
+# Índice
+1. ¿Qué es New Relic?
+
+    1.1. ¿Qué podemos hacer con New Relic?
+
+2. ¿Cómo implementar New Relic en mi sistema Linux?
+3. Implementar New Relic en Bitwarden Server
+    
+    3.1. ¿Qué es Bitwarden?
+
+    3.2. Instalación de Bitwarden
+
+    3.3. Instalación de Agente de New Relic en el servidor donde esta alojado Bitwarden
+
+4. Monitorización de mi Pagina Web En PHP
+
+    4.1. Monitorizar Página Web en PHP Con Docker
+
+5. Monitorizar el tráfico de nuestra web
+
+6. Monitorización de Github Pages con New Relic
+7. Sistema de Logs New Relic
+8. Biografia y Conslusión.
+
+
 
 ## ¿Qué es New Relic?
 ---
@@ -404,3 +429,14 @@ New Relic nos permite ver todos los logs que tienen todos nuestros sistemas a la
 Pinchando en un Log podremos ver todos los detalles de que es, a que servicio pertenece y de que se trata.
 ![newbit](./img-repo/logs2.png)
 
+
+## Biografia
+- [New Relic](https://newrelic.com) 
+- [Bitwarden](https://bitwarden.com/help/install-on-premise-linux/)
+- [Jose Juan GitHub](https://github.com/josejuansanchez)
+- [Jose Juan IAW](https://josejuansanchez.org/iaw/)
+- [Mi Colega Angonca El Creador de la base de datos de la Página Web](https://github.com/DoxtorDoz)
+- [MailGun](https://www.mailgun.com/es/)
+
+## Conclusión
+En Conslusión New Relic es un buen software para Monitorizar cualquier cosa que desees. La desventaja es si no entiendes mucho ingles como me ha pasado a mi te va a costar mucho entender la plataforma y el software ya que toda su documentacíon se encuentra en ingles auqneu tienen explicado todo y cada uno de sus servicios y como funcionan y te ofrecen soporte. Yo recomiendo usar el Sotfware New Relic para monitorizar. Pero lo que mas recomiendo es el uso del gestro de Contraseñas de Bitwarden es el mejor gestor de contraseñas en el momento.
