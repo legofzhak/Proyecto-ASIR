@@ -43,7 +43,7 @@ Por la parte de datos de negocio: todos los aspectos anteriores, más el rendimi
 
 + Es capaz de Monitorizar en tiempo real, casi todos los servicios que ofrece.
 
-## ¿Cómo implementar New Relic en mi sistema Ubuntu?
+## ¿Cómo implementar New Relic en mi sistema Linux?
 ---
 Primero hay que crear una cuenta en [New Relic](https://newrelic.com).
 
